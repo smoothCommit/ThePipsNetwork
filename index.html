@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The pips Network - Market Foundations Course</title>
+    <style>
+        :root {
+            --primary: #219C90;
+            --secondary: #2D4356;
+            --accent: #E9B824;
+            --light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .hero {
+            padding: 4rem 5% 6rem;
+            text-align: center;
+            background: linear-gradient(to bottom right, #f8f9fa, white);
+        }
+
+        .course-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 5%;
+        }
+
+        .course-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .course-title {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--primary);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .module-number {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .activity-box {
+            background: #f0f4ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        .activity-box::before {
+            content: '🛠 Activity';
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .final-project {
+            background: #fff8e1;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .course-title {
+                font-size: 2rem;
+            }
+            
+            .module-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.jpg" alt="The pips Network" class="logo">
+        <nav>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </nav>
+    </header>
+
+    <div class="course-container">
+        <div class="course-header">
+            <h1 class="course-title">Market Foundations – India Edition</h1>
+            <p class="course-subtitle">BASIC TRADING COURSE – FOR INDIAN MARKET BEGINNERS</p>
+            <div class="course-meta">
+                <div>🎯 4 Weeks Program</div>
+                <div>📅 12 Sessions</div>
+                <div>💼 Practical Focus</div>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 1: Indian Stock Market</div>
+                <div class="session-count">Sessions 1-2</div>
+            </div>
+            <ul>
+                <li>Understanding NSE/BSE ecosystem</li>
+                <li>SEBI & regulatory framework</li>
+                <li>Market instruments breakdown</li>
+                <li>Nifty 50 & Sensex analysis</li>
+            </ul>
+            <div class="activity-box">
+                Explore NSEIndia.com and identify top gainers/losers
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 2: Trading Styles</div>
+                <div class="session-count">Sessions 3-4</div>
+            </div>
+            <ul>
+                <li>Intraday vs Swing trading comparison</li>
+                <li>Capital requirements & timings</li>
+                <li>Personality-based style selection</li>
+                <li>Real chart examples analysis</li>
+            </ul>
+            <div class="activity-box">
+                Chart observation exercise on Nifty/BankNifty
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 3: Price Action Basics</div>
+                <div class="session-count">Sessions 5-6</div>
+            </div>
+            <ul>
+                <li>Candlestick pattern mastery</li>
+                <li>Support/Resistance zones</li>
+                <li>Trendline drawing techniques</li>
+                <li>Market structure identification</li>
+            </ul>
+            <div class="activity-box">
+                Mark support/resistance on live charts
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 4: Technical Indicators</div>
+                <div class="session-count">Sessions 7-8</div>
+            </div>
+            <ul>
+                <li>Moving Averages strategies</li>
+                <li>RSI overbought/oversold levels</li>
+                <li>MACD crossover signals</li>
+                <li>Volume confirmation techniques</li>
+            </ul>
+            <div class="activity-box">
+                Create RSI + EMA setup on TradingView
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 5: Trading Tools</div>
+                <div class="session-count">Sessions 9-10</div>
+            </div>
+            <ul>
+                <li>Broker platform comparison</li>
+                <li>Advanced order types</li>
+                <li>Alert systems setup</li>
+                <li>Screener.in fundamentals</li>
+            </ul>
+            <div class="activity-box">
+                Create watchlist & indicator template
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                <div class="module-number">Module 6: Trading Psychology</div>
+                <div class="session-count">Sessions 11-12</div>
+            </div>
+            <ul>
+                <li>Daily routine optimization</li>
+                <li>Journaling best practices</li>
+                <li>Risk management systems</li>
+                <li>Emotional discipline techniques</li>
+            </ul>
+            <div class="activity-box">
+                Implement 1% rule in paper trading
+            </div>
+        </div>
+
+        <div class="final-project">
+            <h3>🏁 Final Project</h3>
+            <p>Execute 3 paper trades with detailed journaling</p>
+            <p>Include analysis of zones, reasoning, and outcomes</p>
+            <a href="#" class="btn">Download Journal Template</a>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
